@@ -1,5 +1,6 @@
 FROM debian:12
 RUN apt update
+RUN apt upgrade -y
 RUN apt install -y apache2
 RUN apt install -y libapache2-mod-wsgi-py3
 RUN apt install -y libapache2-mod-auth-openidc
